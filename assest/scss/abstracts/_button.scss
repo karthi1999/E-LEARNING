@@ -1,0 +1,19 @@
+// Start button style
+// .btn {
+//     font-size: 14px;
+//     color: $white;
+//     border-radius: 30px;
+//     @include font-style($font-m);
+//     @include media-min-sm{
+//         font-size: 16px;
+//     }
+// }
+// @each $btn in $buttons {
+//     .btn-#{nth($btn, 1)} {
+//         &:hover, &:active {
+//             background-color: nth($btn, 2) !important;
+//             color: $white !important;
+//         }
+//     }
+// }
+// End button style

@@ -1,0 +1,641 @@
+@import "./abstracts/variables";
+@import "./mixins/breakpoints";
+// @import "./abstracts/button";
+@import "./abstracts/common";
+@import "./includes/header";
+@import "./includes/footer";
+
+
+// About
+.about{
+    width: 100%;
+    .about-container{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin: 160px 100px;
+        .about-img{
+            padding: 20px;
+            img{
+                width: 500px;
+                height: 500px;
+                border-radius: 10px;
+            }
+        }
+        .about-content{
+            padding: 20px;
+            .about-text{
+                font-size: 20px;
+                font-weight: 500;
+                color: #ff6600;
+                letter-spacing: 5px;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-size: 45px;
+                font-weight: 800;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #495057;
+                font-weight: 400;
+                font-size: 17px;
+                margin-bottom: 30px;
+            }
+            .about-box{
+                a{
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 5px 20px;
+                    text-decoration: none;
+                    background-color: #ff6600;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Subject
+.subject{
+    width: 100%;
+    .subject-container{
+        width: 100%;
+        text-align: center;
+        .subject-text{
+            font-size: 20px;
+            font-weight: 500;
+            color: #ff6600;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 40px;
+        }
+        .subject-img{
+            width: 85%;
+            margin: 43px auto;
+            display: flex;
+            
+            .subject-box{
+                position: relative;
+                width: 280px;
+                height: 180px;
+                margin: auto;
+                .subject-content{
+                    width: 280px;
+                    height: 180px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    &:hover{
+                        img{
+                            transform: scale(120%);
+                            transition: 0.6s;
+                        }
+                    }
+                    img{
+                        border-radius: 10px;
+                        width: 280px;
+                        height: 180px;
+                        border-radius: 13px;
+                        text-align: center;     
+                    }
+                    a{
+                        border-radius: 13px;
+                        width: 280px;
+                        height: 180px;
+                        color: white;
+                        left: 0;
+                        top: 0;
+                        text-align: center;
+                        z-index: 1;
+                        background-color: rgba(0, 0, 0, 0.501);
+                        text-decoration: none;
+                        position: absolute;
+                        h4{
+                            margin-top: 18%;
+                            font-size: 27px;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+// Courses
+.courses{
+    width: 100%;
+    margin-top: 160px;
+    .courses-container{
+        width: 100%;
+        text-align: center;
+        .courses-text{
+            font-size: 20px;
+            font-weight: 500;
+            color: #ff6600;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 40px;
+        }
+        .courses-img{
+            width: 85%;
+            display: flex;
+            margin: 43px auto;
+            justify-content: center;
+            align-items: center;
+            .courses-box{
+                width: 385px;
+                border-radius: 10px;
+                margin: auto;
+                .courses-img-box{  
+                    width: 385px;
+                    height: 250px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    img{
+                        width: 385px;
+                        height: 250px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                    }
+                }
+                .courses-content-box{
+                    width: 100%;
+                    background-color: #f2f1f8;
+                    justify-content: space-between;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    p{
+                        font-size: 14px;
+                    }
+                    i{
+                        padding-right: 6px;
+                        color: #ff6600;
+                    }
+                    .courses-prime{
+                        padding: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    a{
+                        text-align: left;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 22px; 
+                        &:hover{
+                            text-decoration: underline;
+                            color: rgb(195, 26, 26);
+                        }  
+                    }
+                    h4{
+                        font-weight: 500;
+                        padding: 0px 20px;
+                    }
+                    .courses-a{
+                        padding-bottom: 20px;
+                    }
+                    .courses-sec{
+                        border-top: 1px #d7d7dc solid;
+                        padding: 23px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                    
+                        h6{
+                            font-weight: 400;
+                            font-size: 17px;
+                            .courses-num{
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                        }
+                        h5{
+                            font-weight: 450;
+                            font-size: 19px;
+                        }
+                    }
+                }   
+            }    
+        }
+    }
+}
+
+//Sign UP
+.signup{
+    width: 100%;
+    height: auto;
+    margin-top: 160px;
+    .signup-img{
+        background-image: url(../../../public/img/registration.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 715px;
+        .signup-container{
+            background-color: rgba(0, 0, 0, 0.75);
+            width: 100%;
+            height: 715px;
+            .signup-box{
+                width: 85%;
+                height: 715px;
+                margin: auto;
+                display: flex;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-between;
+                .signup-content{
+                    width: 50%;
+                    padding: 20px;
+                    .signup-text{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #ff6600;
+                        letter-spacing: 5px;
+                        margin-bottom: 5px;
+                    }
+                    h5{
+                        padding: 5px 0px;
+                        font-size: 40px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        i{
+                            padding-top: 20px;
+                            padding-right: 10px;
+                            color: #ff6600;
+                        }
+                    }
+                    .signup-para{
+                        margin-bottom: 10px;
+                    }
+                }
+                .signup-page{
+                    width: 40%;
+                    margin: auto;
+                    height: auto;
+                    border-radius: 10px;
+                    background-color: #ff6600;
+                    color: black;
+                    justify-content: center;
+                    text-align: center;
+                    h5{
+                        font-size: 40px;
+                        width: 100%;
+                        margin: auto;
+                        padding: 22px 0px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        background-color: white;
+                    }
+                    .signup-inp{
+                        padding: 25px;
+                        width: 100%;
+                        p{
+                            padding: 20px 0px;
+                            .user-name{
+                                background-color: white;
+                                border: white 1px solid;
+                                border-radius: 7px;
+                                width: 90%;
+                                line-height: 1;
+                                height: 40px;
+                                margin: auto;
+                                font-size: 16px;
+                                font-weight: 400;
+                                padding: 20px;
+                            }
+                            .user-email{
+                                background-color: white;
+                                border: white 1px solid;
+                                border-radius: 7px;
+                                width: 90%;
+                                line-height: 1;
+                                height: 40px;
+                                margin: auto;
+                                font-size: 16px;
+                                font-weight: 400;
+                                padding: 20px;
+                            }
+                            select{
+                                background-color: white;
+                                border: white 1px solid;
+                                color: black;
+                                border-radius: 7px;
+                                width: 90%;
+                                line-height: 1;
+                                height: 40px;
+                                margin: auto;
+                                font-size: 16px;
+                                font-weight: 400;
+                                padding: 20px;
+                            }
+                        }
+                        .signup-now{
+                            width: 90%;
+                            margin: 15px auto;
+                            text-align: center;
+                            border-radius: 5px;
+                            background-color: #495057;
+                            a{
+                                margin-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                text-decoration: none;
+                                color: white;
+                                padding: 10px;
+                            }  
+                        }
+                        .signup-now:hover{
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Teachers page
+.teachers{
+    width: 100%;
+    margin-top: 160px;
+    .teachers-container{
+        width: 100%;
+        text-align: center;
+        .teachers-text{
+            font-size: 20px;
+            font-weight: 500;
+            color: #ff6600;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 40px;
+        }
+        .teachers-img{
+            width: 85%;
+            margin: 43px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            .teachers-box{
+                width: 280px;
+                height: 400px;
+                .teachers-img-box{
+                    width: 280px;
+                    height: 300px;
+                    position: relative;
+                    margin-bottom: 0px;
+                    img{
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        width: 280px;
+                        height: 300px;
+                    }
+                    p{
+                        top: 40%;
+                        left: 0;
+                        text-align: center;
+                        margin: auto;
+                        display: none;
+                        width: 280px;
+                        position: absolute;
+                        i{
+                            max-width: 50px;
+                            font-size: 22px;
+                            color: white;
+                            padding: 10px;
+                            border: 1px white solid;
+                            border-radius: 5px;
+                            margin: 10px;
+                        }
+                        .fa-twitter{
+                            font-size: 22px;
+                            color: white;
+                            max-width: 50px;
+                            padding: 10px 9px;
+                            border: 1px white solid;
+                            border-radius: 5px;
+                            margin: 10px;
+                        }
+                        .fa-facebook-f{
+                            font-size: 22px;
+                            color: white;
+                            max-width: 50px;
+                            padding: 10px 13px;
+                            border: 1px white solid;
+                            border-radius: 5px;
+                            margin: 10px;
+                        }
+                    }
+                }
+                .teachers-content-box{
+                    width: 280px;
+                    height: 100px;
+                    color: black;
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    background-color: #f2f1f8;
+                    h5{
+                        padding: 15px 15px 0px 15px;
+                        font-size: 23px;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: #495057;
+                        padding: 8px 15px 20px 15px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .teachers-box:hover{
+                width: 280px;
+                height: 400px;
+                .teachers-img-box{
+                    width: 280px;
+                    height: 300px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: rgba(68,66,90,.8);
+                    transition: .5s;
+                    img{
+                        position: relative;
+                        z-index: -1;
+                    }
+                    p{
+                        display: block;
+                    }
+                    i:hover{
+                        color: black;
+                        background-color: white;
+                        transition: .5s;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+// Client Page
+.client{
+    width: 100%;
+    margin-top: 160px;
+    .client-container{
+        width: 100%;
+        text-align: center;
+        .client-text{
+            font-size: 20px;
+            font-weight: 500;
+            color: #ff6600;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 40px;
+        }
+        .client-content{
+            width: 55%;
+            color: #495057;
+            text-align: center;
+            margin-top: 43px;
+            margin: auto;
+            .fa-quote-left{
+                font-size: 70px;
+                color:#ff6600;
+            }
+            .client-para{
+                font-size: 24px;
+                font-weight: 450;
+                padding: 20px;
+                text-align: center;
+            }
+            p{
+                img{
+                    padding: 20px;
+                    border-radius: 50%;
+                }
+            }
+            .client-name{
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .client-prof{
+                font-size: 18px;
+            }
+        }
+        .client-next{
+            width: 100%;
+            text-align: center;
+            ul{
+                width: 100%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    padding: 20px 5px;
+                    list-style-type: none;
+                    i{    
+                        font-size: 18px;
+                        padding: 3px;
+                        border: 2px solid #ff6600;
+                        border-radius: 40px;
+                        color: #ff6600;
+                    }
+                }
+                li:hover{
+                    i{    
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Our blog
+.our-blog{
+    width: 100%;
+    margin-top: 160px;
+    
+    .our-blog-text{
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: #ff6600;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+    h5{
+        text-align: center;
+        font-size: 40px;
+    }
+    .our-blog-container{
+        width: 90%;
+        display: flex;
+        border-radius: 10px;
+        text-align: center;
+        margin: 43px auto;
+        
+        .our-blog-box{
+            width: 385px;
+            height: 450px;
+            border-radius: 10px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+                &:hover{
+                    img{
+                        transform: scale(120%);
+                        transition: 0.5s;
+                    }
+                }
+            .our-blog-img{
+                border-radius: 10px;
+                width: 385px;
+                height: 450px;
+                
+                img{
+                    border-radius: 10px;
+                    width: 385px;
+                    height: 450px;
+                    opacity: 0.9;
+                }
+            }
+            .our-blog-content{
+                top: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                height: 450px;
+                padding: 20px;
+                h1{
+                    text-align: left;
+                    margin-top: 270px;
+                    color: white;
+                    font-size: 21px;
+                    font-weight: 500;
+                    padding-bottom: 15px;
+                }
+                p{
+                    text-align: left;
+                    font-size: 17px;
+                    color: #ff6600;
+                }
+            }
+        }
+    }
+}
